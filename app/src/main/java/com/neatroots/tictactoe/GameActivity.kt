@@ -1,5 +1,6 @@
 package com.neatroots.tictactoe
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -112,6 +113,7 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+        @SuppressLint("SuspiciousIndentation")
         override fun onClick(v: View?) {
             gameModel?.apply {
                 if (gameStatus!= GameStatus.INPROGRESS){
